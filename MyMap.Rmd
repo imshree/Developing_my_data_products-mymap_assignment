@@ -1,0 +1,47 @@
+---
+title: "Developing Data Products - RMarkdown Leaflet Assignment"
+author: "Shree"
+date: "February 18, 2017"
+output: html_document
+---
+
+# ------------------------------------------------------------------------
+
+### RMarkdown Leaflet - My Map
+
+---
+---
+
+
+### Instructions 
+
+---
+---
+
+Create a web page using R Markdown that features a map created with Leaflet.
+
+Host your webpage on either GitHub Pages, RPubs, or NeoCities.
+
+Your webpage must contain the date that you created the document, and it must contain a map created with Leaflet. We would love to see you show off your creativity!
+
+---
+---
+
+```{r}
+library(leaflet)
+
+adobeHQ <- leaflet() %>% addTiles() 
+adobeHQ <- adobeHQ %>% addMarkers(lat=37.329731, lng=-121.888826, popup="Adobe HQ in San Jose, CA")
+
+adobeHQ
+
+leaflet() %>%
+addTiles() %>%
+addRectangles(lat1 = 37.333257, lng1 = -121.897990,
+lat2 = 37.326057, lng2 = -121.887132)
+
+
+
+```
+
+
